@@ -20,7 +20,6 @@ RUN set -ex; \
 ENV LANG en_US.utf8
 
 RUN mkdir /docker-entrypoint-initdb.d
-COPY create_db.sql /docker-entrypoint-initdb.d/
 
 ENV PG_MAJOR 9.4
 ENV PG_VERSION 9.4.12
